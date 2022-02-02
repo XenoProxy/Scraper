@@ -1,0 +1,23 @@
+import bs4
+
+'''
+    url = "https://www.digikey.com/"
+    html_text = requests.get(url).text
+    soup = bs4.BeautifulSoup(html_text, 'lxml')  # используем парсер lxml
+    search = soup.find(
+        "input",  # тип тега
+        class_="header__searchinput dkdirchanger product-search-text search-textbox"
+    ).text
+    with open('test.html', 'w', encoding="cp1251") as f:
+        f.write(result.text)
+'''
+
+
+    soup = bs4.BeautifulSoup(result.text, 'lxml')
+    # search = soup.find(
+    #     "div",  # тип тега
+    #     class_="MuiGrid-root MuiGrid-item",
+    #     attrs={"h1": "Integrated Circuits (ICs)"}
+    # ).text
+    # with open('test.html', 'w', encoding="cp1251") as f:
+    #     f.write(result.text)
